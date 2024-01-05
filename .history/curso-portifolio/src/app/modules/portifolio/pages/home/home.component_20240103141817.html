@@ -1,0 +1,17 @@
+<app-header />
+
+<main>
+  <app-know-ledge/>
+  <app-experiences/>
+
+  @defer(on viewreport) {
+    <app-projects/>
+  } @placeholder {
+    <section>
+      
+    </section>
+  } @error {
+
+  }
+</main>
+
