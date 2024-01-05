@@ -1,0 +1,16 @@
+<header>
+  <h2>{{ getData()?.title }}</h2>
+  <button>
+    <img src="../../../../../../assets/icons/dialog/close.svg" alt="Botão para fechar o dialago">
+  </button>
+</header>
+
+<mat-dialog-content>
+  <h3>Descrição</h3>
+
+  <article [innerHTML]="getData()?.description"></article>
+
+  <nav>
+    @for
+  </nav>
+</mat-dialog-content>

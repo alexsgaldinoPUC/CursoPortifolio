@@ -1,0 +1,17 @@
+<app-header />
+
+<main>
+  <app-know-ledge/>
+  <app-experiences/>
+
+  @defer(on viewport) {
+    <app-projects/>
+  } @placeholder {
+    <section>
+      <h2>Carregando todos os objetos</h2>
+    </section>
+  } @error {
+
+  }
+</main>
+
